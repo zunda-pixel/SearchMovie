@@ -1,7 +1,7 @@
 # SearchMovie
 SearchMovieではAmazon Primeの映画を検索してメモ(保存)しておけるアプリです。
 
-
+screenshot1.png
 
 # TODO
 
