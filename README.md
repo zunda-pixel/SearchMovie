@@ -1,7 +1,7 @@
 # SearchMovie
 SearchMovieではAmazon Primeの映画を検索してメモ(保存)しておけるアプリです。
 
-<img src="https://github.com/zunda-pixel/SearchMovie/blob/master/screenshot1.png" height="500"> <img src="https://github.com/zunda-pixel/SearchMovie/blob/master/screenshot2.png" height="500">
+<img src="https://github.com/zunda-pixel/SearchMovie/blob/master/screenshot1.png" height="350"> <img src="https://github.com/zunda-pixel/SearchMovie/blob/master/screenshot2.png" height="350">
 
 # TODO
 
