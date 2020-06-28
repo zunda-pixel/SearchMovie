@@ -21,13 +21,18 @@ struct ContentView: View {
         movies = movieList.getMovies()
     }
     
-    @State private var name = ""
-
+    @State var textField = ""
     var body: some View {
+        
+        
         VStack{
-            TextField("プレースホルダー", text: $name)
-                .textFieldStyle(RoundedBorderTextFieldStyle())  // 入力域のまわりを枠で囲む
+            TextField("映画名", text: $textField, onCommit: {
+                                keyword = self.textField
+                                movieList = MovieList(keyword: keyword)
+                           })
+                .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                
             NavigationView{
                 List(0 ..< movies.count) { item in
                     NavigationLink(destination: MovieDetail(movie: movies[item])) {

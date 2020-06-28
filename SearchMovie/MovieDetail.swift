@@ -35,6 +35,9 @@ struct WebView: UIViewRepresentable {
 struct MovieDetail: View {
     var movie: Movie
     var body: some View {
-        WebView(loadUrl: movie.url)
+        VStack{
+            WebView(loadUrl: movie.url)
+            Spacer()
+        }
     }
 }

@@ -49,17 +49,17 @@ class MovieList {
     
     func getFeatures(count: Int) -> Movie {
         var temp: String = self.eachHTML[count]
-        temp = temp.components(separatedBy: "<div class=\"a-section a-spacing-none\">")[0]
+        temp = temp.components(separatedBy: "<div class=\"a-section a-spacing-none\">").first!
         self.name = temp.components(separatedBy: "\"")[9]
         self.movieURL = String(format: "%@%@", "https://www.amazon.co.jp/", temp.components(separatedBy: "\"")[31])
         temp = temp.components(separatedBy: "2.5x, ").last!
-        self.imgURL = temp.components(separatedBy: " 3x")[0]
+        self.imgURL = temp.components(separatedBy: " 3x").first!
         let movie:Movie = Movie(name:self.name, imageURL:self.imgURL, url: self.movieURL)
         return movie
     }
     func getMovies() ->  [Movie] {
         movies = []
-        for num in 0...self.countMovie-1{
+        for num in 0..<self.countMovie{
             self.movies.append(getFeatures(count: num))
         }
         return self.movies
