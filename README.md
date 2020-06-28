@@ -10,3 +10,8 @@ SearchMovieではAmazon Primeの映画を検索してメモ(保存)しておけ�
 - WebViewで必要なところだけ表示するように
 - WebViewでTextFieldを表示しないように
 - 映画のサムネイルサイズを調整
+
+# HACK
+AmazonページのスクレイピングにAlamofireを使いたいが、うまくimportできなくて文字列(html)の分割で無理やり行なっている
+No such module 'Alamofire'
+
