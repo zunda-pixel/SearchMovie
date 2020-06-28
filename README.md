@@ -13,5 +13,6 @@ SearchMovieではAmazon Primeの映画を検索してメモ(保存)しておけ�
 
 # HACK
 AmazonページのスクレイピングにAlamofireを使いたいが、うまくimportできなくて文字列(html)の分割で無理やり行なっている
+
 No such module 'Alamofire'
 
